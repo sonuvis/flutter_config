@@ -32,11 +32,11 @@ class FlutterConfigPlugin(private val context: Context? = null): FlutterPlugin, 
   }
 
   companion object {
-    @JvmStatic
-    fun registerWith(registrar: Registrar) {
-      val channel = MethodChannel(registrar.messenger(), "flutter_config")
-      channel.setMethodCallHandler(FlutterConfigPlugin(registrar.activity()))
-    }
+    // @JvmStatic
+    // fun registerWith(registrar: Registrar) {
+    //   val channel = MethodChannel(registrar.messenger(), "flutter_config")
+    //   channel.setMethodCallHandler(FlutterConfigPlugin(registrar.activity()))
+    // }
   }
 
   override fun onMethodCall(call: MethodCall, result: Result) {
